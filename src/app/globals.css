@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-sora), var(--font-inter), sans-serif;
+
+  --color-navy-950: #070d18;
+  --color-navy-900: #0b1424;
+  --color-navy-800: #12203a;
+  --color-navy-700: #1b2d4f;
+  --color-gold-300: #fcd77f;
+  --color-gold-400: #f2b53a;
+  --color-gold-500: #e09a12;
+  --color-teal-300: #5eead4;
+  --color-teal-400: #2dd4bf;
+  --color-teal-500: #14b8a6;
+  --color-teal-600: #0e9384;
+
+  --animate-marquee: marquee 32s linear infinite;
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+}
+
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f5f7fb;
+  --card: #ffffff;
+  --line: #e2e8f0;
+  --ink: #0f172a;
+  --text: #475569;
+}
+.dark {
+  --bg: #0b1424;
+  --bg-soft: #0e192d;
+  --card: #12203a;
+  --line: #1f3155;
+  --ink: #f1f5f9;
+  --text: #a3b1c6;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-soft: var(--bg-soft);
+  --color-card: var(--card);
+  --color-line: var(--line);
+  --color-ink: var(--ink);
+  --color-body: var(--text);
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+h1, h2, h3, h4 { font-family: var(--font-display); color: var(--ink); letter-spacing: -0.02em; }
+
+.text-gradient {
+  background: linear-gradient(90deg, var(--color-gold-400), var(--color-gold-300) 40%, var(--color-teal-400));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse at 60% 30%, black 20%, transparent 70%);
+}
+::selection { background: var(--color-gold-400); color: var(--color-navy-900); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
