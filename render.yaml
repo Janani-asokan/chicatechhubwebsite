@@ -11,9 +11,7 @@ services:
       - key: NODE_VERSION
         value: "22"
       - key: DATABASE_URL
-        fromDatabase:
-          name: chicatechhub-db
-          property: connectionString
+        sync: false # Neon Postgres connection string (paste in Render dashboard)
       - key: SESSION_SECRET
         generateValue: true
       - key: ADMIN_PASSWORD
@@ -21,9 +19,3 @@ services:
       - key: NOTIFY_WEBHOOK_URL
         sync: false # optional: Discord/Slack webhook for new-enquiry alerts
 
-databases:
-  - name: chicatechhub-db
-    plan: free
-    region: singapore
-    databaseName: chicatechhub
-    user: chicatechhub

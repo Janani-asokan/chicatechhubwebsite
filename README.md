@@ -27,7 +27,8 @@ Open http://localhost:3000 and http://localhost:3000/admin. Locally the database
 ## Deploy to Render
 
 1. Push this folder to a GitHub repository.
-2. In Render: **New → Blueprint**, pick the repository. `render.yaml` creates the web service and a PostgreSQL database.
-3. When asked, enter your own `ADMIN_PASSWORD` (and optionally `NOTIFY_WEBHOOK_URL`).
+2. Create a free Postgres database at neon.tech and copy its connection string.
+3. In Render: **New → Blueprint**, pick the repository. `render.yaml` creates the web service.
+4. When asked, enter `DATABASE_URL` (the Neon connection string), your own `ADMIN_PASSWORD`, and optionally `NOTIFY_WEBHOOK_URL`.
 
-Note: Render's free web service sleeps after 15 minutes idle (first visit then takes ~30–50 s), and the free database expires after 30 days. For a client-facing site, upgrade the web service to Starter and the database to Basic.
+Note: Render's free web service sleeps after 15 minutes idle (first visit then takes ~30–50 s), so for a client-facing site consider upgrading the web service to Starter.

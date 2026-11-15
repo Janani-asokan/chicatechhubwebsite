@@ -1,6 +1,6 @@
 import "server-only";
 
-// Production: real PostgreSQL via DATABASE_URL (Render Postgres).
+// Production: real PostgreSQL via DATABASE_URL (Neon or Render Postgres).
 // Local development: embedded PGlite (Postgres compiled to WASM), stored in .data/.
 
 type Row = Record<string, unknown>;
@@ -34,6 +34,9 @@ async function create(): Promise<Db> {
     // Render's internal URL needs no TLS; for an external URL add ?sslmode=require to it.
     const pool = new Pool({ connectionString: process.env.DATABASE_URL, max: 5 });
     db = { query: (sql, params) => pool.query(sql, params as unknown[]) as never };
+  } else if (process.env.NODE_ENV === "production" && process.env.RENDER) {
+    // Render's disk is wiped on every deploy, so never fall back to a local DB there.
+    throw new Error("DATABASE_URL is not set");
   } else {
     const { PGlite } = await import("@electric-sql/pglite");
     const { mkdirSync } = await import("node:fs");
