@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { ArrowRight, Zap, Trophy, ShieldCheck } from "lucide-react";
+import { ArrowRight, Zap, Rocket } from "lucide-react";
 import { profile, stats } from "@/lib/content";
 import { Counter } from "./ui";
 
@@ -91,8 +91,7 @@ export default function Hero() {
             </div>
           </motion.div>
           <FloatCard className="-left-10 top-[12%] max-sm:-left-3 max-sm:top-[3%]" icon={<Zap size={18} />} title="Senior Data Scientist" sub="Aleta Software Solutions" delay={0} />
-          <FloatCard className="-right-8 bottom-[22%] max-sm:-right-3 max-sm:bottom-[16%]" icon={<Trophy size={18} />} title="Best Innovator" sub="PitchWar Hackathon" delay={1.5} />
-          <FloatCard className="-bottom-5 left-6" icon={<ShieldCheck size={18} />} title="ISTQB Certified" sub="Quality-first delivery" delay={3} />
+          <FloatCard className="-right-8 bottom-[18%] max-sm:-right-3 max-sm:bottom-[12%]" icon={<Rocket size={18} />} title="Co-founder & CTO" sub="Corpus365" delay={1.5} />
         </motion.div>
       </div>
     </section>
