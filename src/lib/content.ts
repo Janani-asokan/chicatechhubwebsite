@@ -22,7 +22,7 @@ export const profile = {
     "Passionate software engineer with hands-on experience in AI, Data Science and Software Testing. Proficient in Python and C++ with a focus on building scalable systems and automation, and applying technical skills to drive innovation in next-generation AI computing.",
 };
 
-export const stats = [
+export const stats: { value: number; suffix: string; label: string; decimals?: number }[] = [
   { value: 2, suffix: "", label: "Live client products" },
   { value: 95, suffix: "%", label: "Best model accuracy" },
   { value: 4, suffix: "", label: "Awards & honours" },
@@ -78,7 +78,7 @@ export const clients: ClientProject[] = [
     id: "corpus360",
     name: "Corpus360",
     tagline: "Billing and stock, without the paperwork",
-    category: "Billing SaaS",
+    category: "Co-founder & CTO · SaaS",
     url: "https://ledgerly-books.onrender.com/app/purchases/orders",
     summary:
       "GST invoicing, inventory and accounts for Indian businesses in one clean dashboard.",
@@ -104,6 +104,16 @@ export const experience = [
     period: "2026 – Present",
     points: [
       "Senior Data Scientist building data-driven and AI solutions for business clients.",
+    ],
+  },
+  {
+    role: "Co-founder & CTO",
+    company: "Corpus360",
+    location: "India",
+    period: "Present",
+    points: [
+      "Co-founded Corpus360, a GST billing, inventory and accounts platform for Indian businesses.",
+      "Lead the product's technology: architecture, development, deployment and quality.",
     ],
   },
   {

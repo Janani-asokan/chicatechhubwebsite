@@ -147,7 +147,7 @@ export function ClientWork() {
   return (
     <section id="work" className="bg-bg py-24 lg:py-28">
       <div className={wrap}>
-        <SectionHeading kicker="Client work" title="Live products, running real businesses" sub="Both platforms are in production and used daily by their owners. Open the case study or try them live." />
+        <SectionHeading kicker="Client work" title="Live products, running real businesses" sub="Both platforms are in production and used daily. Open the case study or try them live." />
         <div className="space-y-8">
           {clients.map((c, i) => (
             <Reveal key={c.id}>
