@@ -26,7 +26,7 @@ export const stats = [
   { value: 2, suffix: "", label: "Live client products" },
   { value: 95, suffix: "%", label: "Best model accuracy" },
   { value: 4, suffix: "", label: "Awards & honours" },
-  { value: 8.4, suffix: "", label: "CGPA · MTech CSE, VIT", decimals: 1 },
+  { value: 65, suffix: "%", label: "Time saved with AI summaries" },
 ];
 
 export const services = [
@@ -98,10 +98,19 @@ export const clients: ClientProject[] = [
 
 export const experience = [
   {
+    role: "Senior Data Scientist",
+    company: "Aleta Software Solutions",
+    location: "India",
+    period: "2026 – Present",
+    points: [
+      "Senior Data Scientist building data-driven and AI solutions for business clients.",
+    ],
+  },
+  {
     role: "Cloud API Automation Engineer",
     company: "Signify (formerly Philips Lighting)",
     location: "Bengaluru",
-    period: "Jul 2025 – Present",
+    period: "Jul 2025 – 2026",
     points: [
       "Built an integrated AI to automate the firmware and cloud API testing flow.",
       "Built a scalable, cloud-native API test framework in Python and Pytest validating REST APIs across dev, staging and production.",
@@ -125,7 +134,7 @@ export const experience = [
     company: "Vellore Institute of Technology",
     location: "Vellore",
     period: "Jul 2021 – Jul 2026",
-    points: ["CGPA 8.4. Research in federated learning for healthcare."],
+    points: ["Research in federated learning for healthcare."],
   },
 ];
 
@@ -182,7 +191,7 @@ export const awards = [
   { icon: "Star", title: "Best Rising Star", text: "For impactful contributions on the healthcare orchestration platform." },
   { icon: "FileText", title: "Research Publication", text: "Federated Learning in Healthcare: a decentralised AI model." },
   { icon: "BadgeCheck", title: "ISTQB Certified Tester", text: "Internationally recognised software testing certification." },
-  { icon: "GraduationCap", title: "MTech CSE · VIT Vellore", text: "Computer Science & Engineering, CGPA 8.4." },
+  { icon: "GraduationCap", title: "MTech CSE · VIT Vellore", text: "Computer Science & Engineering, Vellore Institute of Technology." },
 ] as const;
 
 export const skills: Record<string, string[]> = {

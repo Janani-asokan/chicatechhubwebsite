@@ -56,7 +56,7 @@ export default function Hero() {
           </motion.h1>
           <motion.p variants={fade} className="mt-6 max-w-xl text-lg leading-relaxed">
             Hi, I&apos;m <strong className="text-white">{profile.name}</strong>, founder of <strong className="text-white">ChicaTechHub</strong>.
-            I design and ship reliable business software, backed by enterprise experience at <strong className="text-white">Signify (Philips)</strong>.
+            I design and ship reliable business software, backed by my work as a <strong className="text-white">Senior Data Scientist at Aleta Software Solutions</strong>.
           </motion.p>
           <motion.div variants={fade} className="mt-9 flex flex-wrap gap-3">
             <a href="#contact" className="group inline-flex items-center gap-2 rounded-full bg-gold-400 px-7 py-3.5 font-semibold text-navy-900 shadow-xl shadow-gold-400/25 transition hover:-translate-y-0.5 hover:bg-gold-300">
@@ -90,7 +90,7 @@ export default function Hero() {
               <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-navy-900/70 to-transparent" />
             </div>
           </motion.div>
-          <FloatCard className="-left-10 top-[12%] max-sm:-left-3 max-sm:top-[3%]" icon={<Zap size={18} />} title="Cloud API Automation" sub="Signify (Philips)" delay={0} />
+          <FloatCard className="-left-10 top-[12%] max-sm:-left-3 max-sm:top-[3%]" icon={<Zap size={18} />} title="Senior Data Scientist" sub="Aleta Software Solutions" delay={0} />
           <FloatCard className="-right-8 bottom-[22%] max-sm:-right-3 max-sm:bottom-[16%]" icon={<Trophy size={18} />} title="Best Innovator" sub="PitchWar Hackathon" delay={1.5} />
           <FloatCard className="-bottom-5 left-6" icon={<ShieldCheck size={18} />} title="ISTQB Certified" sub="Quality-first delivery" delay={3} />
         </motion.div>

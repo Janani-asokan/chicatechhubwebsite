@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s | ChicaTechHub",
   },
   description:
-    "ChicaTechHub builds billing & GST software, lending platforms, AI solutions and custom web apps. Founded by Janani Asokan, Cloud API Automation Engineer at Signify (Philips).",
+    "ChicaTechHub builds billing & GST software, lending platforms, AI solutions and custom web apps. Founded by Janani Asokan, Senior Data Scientist at Aleta Software Solutions.",
   keywords: ["freelance developer India", "billing software", "GST software", "loan management software", "AI solutions", "web development Bengaluru", "ChicaTechHub"],
   openGraph: {
     title: "ChicaTechHub | Custom Software, Fintech & AI Solutions",

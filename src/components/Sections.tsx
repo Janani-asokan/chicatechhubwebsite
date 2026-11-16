@@ -10,7 +10,7 @@ const wrap = "mx-auto w-[min(1180px,100%-32px)]";
 
 /* ---------- Trust marquee ---------- */
 export function Marquee() {
-  const items = ["Signify (Philips)", "Corpus360", "Sri Sakthi Thirumurugan Finance", "VIT Vellore", "ISRO Hackathon", "PitchWar Hackathon", "ISTQB Certified"];
+  const items = ["Aleta Software Solutions", "Signify (Philips)", "Corpus360", "Sri Sakthi Thirumurugan Finance", "VIT Vellore", "ISRO Hackathon", "PitchWar Hackathon", "ISTQB Certified"];
   return (
     <div className="relative overflow-hidden border-y border-white/5 bg-navy-800 py-5">
       <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-navy-800 to-transparent" />
@@ -29,7 +29,7 @@ export function Marquee() {
 /* ---------- About ---------- */
 export function About() {
   const facts = [
-    ["Day job", "Cloud API Automation Engineer, Signify"],
+    ["Current role", "Senior Data Scientist, Aleta Software Solutions"],
     ["Education", "MTech CSE, VIT Vellore"],
     ["Based in", profile.location],
     ["Works with", "Clients across India"],
@@ -226,7 +226,7 @@ export function Experience() {
       <div className="grid-bg pointer-events-none absolute inset-0" />
       <div className={`${wrap} relative grid gap-12 lg:grid-cols-[.8fr_1.2fr]`}>
         <div className="lg:sticky lg:top-28 lg:self-start">
-          <SectionHeading light kicker="Experience" title="Enterprise-grade engineering, brought to your project." sub="The same testing and reliability practices used on connected-lighting products worldwide go into every ChicaTechHub delivery." />
+          <SectionHeading light kicker="Experience" title="Enterprise-grade engineering, brought to your project." sub="Industry experience in data science, AI and enterprise quality engineering goes into every ChicaTechHub delivery." />
         </div>
         <ol className="relative space-y-6 border-l border-white/10 pl-8">
           {experience.map((e, i) => (
