@@ -10,7 +10,7 @@ const wrap = "mx-auto w-[min(1180px,100%-32px)]";
 
 /* ---------- Trust marquee ---------- */
 export function Marquee() {
-  const items = ["Aleta Software Solutions", "Signify (Philips)", "Corpus360", "Sri Sakthi Thirumurugan Finance", "VIT Vellore", "ISRO Hackathon", "PitchWar Hackathon", "ISTQB Certified"];
+  const items = ["Aleta Software Solutions", "Signify (Philips)", "Corpus365", "Sri Sakthi Thirumurugan Finance", "VIT Vellore", "ISRO Hackathon", "PitchWar Hackathon", "ISTQB Certified"];
   return (
     <div className="relative overflow-hidden border-y border-white/5 bg-navy-800 py-5">
       <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-navy-800 to-transparent" />
@@ -113,7 +113,7 @@ function BillingMock() {
   const pill: Record<string, string> = { Received: "bg-green-100 text-green-800", Pending: "bg-amber-100 text-amber-800", Draft: "bg-slate-200 text-slate-600" };
   return (
     <div className="w-full max-w-md overflow-hidden rounded-2xl bg-white text-[12px] text-slate-700 shadow-2xl shadow-black/50">
-      <BrowserBar label="Corpus360 · Purchase Orders" />
+      <BrowserBar label="Corpus365 · Purchase Orders" />
       <div className="p-3">
         <div className="grid grid-cols-[.9fr_1.3fr_1fr_.9fr] gap-2 px-2 py-2 text-[10px] font-semibold uppercase tracking-wide text-slate-500"><span>PO #</span><span>Supplier</span><span>Status</span><span className="text-right">Amount</span></div>
         {rows.map((r, i) => (

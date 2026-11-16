@@ -76,7 +76,7 @@ export const clients: ClientProject[] = [
   },
   {
     id: "corpus360",
-    name: "Corpus360",
+    name: "Corpus365",
     tagline: "Billing and stock, without the paperwork",
     category: "Co-founder & CTO · SaaS",
     url: "https://ledgerly-books.onrender.com/app/purchases/orders",
@@ -108,11 +108,11 @@ export const experience = [
   },
   {
     role: "Co-founder & CTO",
-    company: "Corpus360",
+    company: "Corpus365",
     location: "India",
     period: "Present",
     points: [
-      "Co-founded Corpus360, a GST billing, inventory and accounts platform for Indian businesses.",
+      "Co-founded Corpus365, a GST billing, inventory and accounts platform for Indian businesses.",
       "Lead the product's technology: architecture, development, deployment and quality.",
     ],
   },
